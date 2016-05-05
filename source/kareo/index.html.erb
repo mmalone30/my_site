@@ -1,0 +1,150 @@
+---
+title: Sharethrough
+---
+
+<div class="main-header">
+  <div class="main-nav">
+    <a href="./">Mitch Malone</a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 col-offset-2">
+        <h2>Kareo</h2>
+        <h3>A powerful suite of products for medical billing, providing care, and engaging patients.</h3>
+
+        <p>
+          At Kareo, I designed products for patients, medical billers, and front desk staff. We'll take a look
+          at one product that intersected all three personas: the Kareo Patient Portal.
+        </p>
+        <a href="http://kareo.com">Visit Kareo</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 col-offset-2">
+        <h2>What is Kareo?</h2>
+        <p>
+          Kareo is a SaaS platform for small medical offices. It offers products for writing clinical notes called an EHR (Electronic Health Record System),
+          managing medical billing, scheduling, and communicating &amp; engaging with patients (Patient Portal). Typical customers include small family medicine physicians and
+          physical therapists.
+        </p>
+        <p>
+          Large hospital systems typically don't use Kareo because they have infrastructure
+          and resources to handle billing themselves. Smaller practices aren't so business savvy and so they look to
+          outsourced billing solutions which can be costly. An easy-to-use billing system that connects elegantly with
+          an EHR is a very valuable proposition. Kareo aims to do this.
+        </p>
+        <h2>Patient Portal</h2>
+        <figure>
+          <%= image_tag "portal.jpg" %>
+        </figure>
+        <h3>Why make a patient portal?</h3>
+        <p>
+          Patient Portals are web products that are typically bundled with EHRs.
+          They allow patients to access their health record and communicate with their providers.
+          With the Patient Portal, we saw and opportunity to increase patient engagement
+          and revenue volume for our customers.
+        </p>
+        <p>
+          One of our goals was to increase patient health awareness by making health information
+          easy to get to and easy to understand.For practices, our goal was to increase patient
+          responsiblity payments. In 2010, the US healthcare industry wrote off <a href="https://www.jpmorgan.com/cm/BlobServer/JPM-KeyTrends-in-HealthcarePatientPayments.pdf?blobkey=id&blobwhere=1320610345938&blobheader=application/pdf&blobheadername1=Cache-Control&blobheadervalue1=private&blobcol=urldata&blobtable=MungoBlobs" target="_blank">$65 billion</a>
+          in bad debt accrued from not collecting patient payments. For our customers, the
+          problem lies in archaic payment practices, which we hoped to innovate with Patient Portal.
+        </p>
+        <figure>
+          <%= image_tag "early-portal-notes.jpg" %>
+        </figure>
+        <h3>User Research</h3>
+        <p>
+          We learned from interviews with patients and healthcare professionals that:
+        </p>
+
+        <blockquote>
+          Patients don't care about statement details; they just want to know what they owe and how to pay it.
+        </blockquote>
+
+        <p>
+          This was difficult for us to believe. How could patients not care about what they're paying for? We
+          listened to the feedback and designed a payment solution that payment solution (using Stripe) that
+          connected to the Patient Portal. But we also let patients make payments without logging in,
+          authenticating, and viewing their statements. All they could see if what they owed and to whom.
+        </p>
+        <h3>Structure</h3>
+        <p>
+          Patient Portal's structure is quite complex. Certain functionality won't work if the customer
+          doesn't have certain products enabled. For example, patient's can't make payments if the practice
+          doesn't have Kareo Practice Management. We want to change this (we're currently working on this now)
+          so practices can collect the money and work with an in-house biller or outsourced biller to
+          adjudicate the amount. The value in signing up for the full Kareo suite is a lot of that work
+          is done automatically. Above you can see the basic structure of how patients can interact with
+          their practices with three typical scenarios.
+        </p>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <figure>
+          <%= image_tag "portal-structure2.png" %>
+          <figcaption>
+            Basic functionality for how patient portal connects to doctors, billers, front desk staff, and patients.
+          </figcaption>
+        </figure>
+        <figure>
+          <%= image_tag "patient-portal-flow.png" %>
+          <figcaption>
+            Workflow for how a patient initially signs up for the Patient Portal.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <figure>
+          <%= image_tag "patient-statement.jpg" %>
+          <figcaption>
+            The new patient statement focused on clarity. We assumed that if the statement was clear, people
+            would be more likely to make payments.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 col-offset-2">
+        <h3>A new statement</h3>
+        <p>
+          Despite the fact that fewer people use it, I'm really proud of the new statement. I've never seen
+          a patient statement like this one before so I'm glad to have entered it into the minds and hands
+          of some folks. The statement progressively disclosures information in a human-readable way to the
+          patient, so they can drink it in one service item at a time. Currently, most statements throw
+          everything onto a sheet of paper and use a lot of esoteric language. Our statement is chunked
+          into four easy-to-understand sections:
+        </p>
+        <ul>
+          <li>
+            What was charged
+          </li>
+          <li>
+            What insurance paid
+          </li>
+          <li>
+            What you've already paid
+          </li>
+          <li>
+            What you owe
+          </li>
+
+        </ul>
+
+        <p>
+          Each of these sections can be drilled into revealing visits with dates. These visits can be
+          further drilled into so you can see individual service items (e.g., an office visit).
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

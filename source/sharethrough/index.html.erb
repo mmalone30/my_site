@@ -1,0 +1,208 @@
+---
+title: Sharethrough
+---
+
+<div class="main-header">
+  <div class="main-nav">
+    <a href="./">Mitch Malone</a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 col-offset-2">
+        <h2>Sharethrough</h2>
+        <h3>A complete software platform to power native advertising for modern publishers.</h3>
+        <p>
+          At Sharethrough, I lead design on Sharethrough for Publishers&mdash;the product that hundreds of
+          publishers like <em>Forbes</em>, <em>USA Today</em>, and <em>Rolling Stone</em> use to manage their native monetization.
+        </p>
+        <a href="http://sharethrough.com">Visit Sharethrough</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 col-offset-2">
+        <h2>Really quick intro to native advertising</h2>
+        <p>
+          Let's start by defining what isn't native. Popups, interstitals, banners&mdash;all that annoying shit&mdash;is not native. That's called <strong>display advertising</strong>.
+          In an information economy, your attention is capital. So marketers and publishers can take a pretty blunt approach: to literally blast
+          you with ads. Sharethrough thinks there's a better way.
+        </p>
+        <p>
+          Native advertising fits the form and function of the site or app that it's on. In a world of feeds, this concept makes
+          a lot of sense. Instead of interrupting someone, they can come across content that is supposed to be there. This makes
+          for a better experience, which brings the user back to the site, which brings more revenue for the publishers. A nice little
+          feedback loop is created.
+        </p>
+        <p>
+          Instead of a static image, native advertising is a <a href="http://nativeadvertising.com/why-a-native-ad-can-blend-in-to-any-site/" target="_blank">collection of components</a>: headline, description, by line, thumbnail. All the same
+          atomic units that make up an article in a feed.
+        </p>
+        <figure>
+          <%= image_tag "native-process.png" %>
+          <figcaption>
+            Really high level model of how native advertising works.
+          </figcaption>
+        </figure>
+        <p>
+          So it's good for the publisher and the reader but what about the advertiser? Turns out native advertising works better form
+          them too. We've <a href="http://www.sharethrough.com/neuroscience/" target="_blank">done some research</a> on this. We've found
+          that readers "see" native ads more often than traditional display ads. Viewability rates are the same but the reader <em>actually</em>
+          reads the native ad.
+
+        </p>
+        <h2>New Performance Reporting</h2>
+        <p>
+          One of the main jobs of Sharethrough for Publishers (SFP) is to tell publishers how much money they're making.
+          Understanding performance drives a lot of engagement and helps publishers become succcessful. One of my first projects was to
+          improve our reporting.
+        </p>
+        <h3>The Problem</h3>
+        <p>
+          There were two main problems. First, reports should be used to help publishers answer specific questions. The <strong>existing reporting was too broad</strong> and only scratched the surface.
+          It was hard to truly understand how well your monetization was doing. Key metrics like fill rates, earnings, and impression
+          requests could be answered. But what about understanding fill on a website <strong>as a whole</strong>? Or on a specific device?
+          What about the ads themselves? These questions were lost on publishers.
+        </p>
+        <p>
+          Second, once you can answer those questions, <strong>how do you take action</strong> on that knowledge?
+        </p>
+        <h3>Sketching &amp; Ideation</h3>
+        <p>
+          The first thing I wanted to understand was the <strong>mental model</strong> of a publisher when they think about performance.
+          What metaphors do they use? How do they think about performance.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <figure>
+          <%= image_tag "sketch-notes.jpg" %>
+          <figcaption>
+            Thinking about attention as a key performance metric.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-6">
+        <figure>
+          <%= image_tag "sketch-notes2.jpg" %>
+          <figcaption>
+            Thinking about activity (performance + management).
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <figure>
+          <%= image_tag "ui-audit@2x.png" %>
+          <figcaption>
+            Post-its and screenshots of the existing performance design.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-6">
+        <figure>
+          <%= image_tag "pub-metrics2.png" %>
+          <figcaption>
+            An early design. Here, the conceptual design was based on a SQL-like "query builder". This was powerful but hard to work with.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 col-offset-2">
+
+        <h3>Levels &amp; Dimensions</h3>
+        <figure>
+          <%= image_tag "levels-dimensions.png" %>
+
+        </figure>
+        <p>
+          Through experimenting with prototypes, we found a design that worked well to help our customers. The mental model I like
+          to use to explain it is a magic pair of binaculars.
+        </p>
+        <p>
+          Imagine looking at a mountain with a set of binoculars. At the widest aperture,
+          you see the whole moutain. You turn a dial and you zoom in a bit. Zoom in a little more, and you see a tiny hiker. A little more,
+          and the hiker fills out at a higher resolution. At this point, you can only see the peak and all the details of the summit. These are
+          the "levels".
+        </p>
+        <p>
+          Now imagine there's another dial on the binoculars. This one changes the visual spectrum&amp;you can now look at the mountain
+          in the visible light, infrared, x-ray, gamma, etc. Through these new "dimensions", you can glean new insights about the mountain. Through infrared,
+          a campfire is now visible, for example. This way of thinking works really well for displaying monetization performance.
+        </p>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <figure>
+          <%= image_tag "dashboard.png" %>
+          <figcaption>
+            When you first enter the product, you get high-level performance metrics. This level is gives you a
+            sense of the health of your overall native monetization.
+          </figcaption>
+        </figure>
+        <figure>
+          <%= image_tag "programmatic-1.png" %>
+          <figcaption>
+            Programmatic reporting interface. This graph shows performance for advertisers bidding on this publisher's inventory.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <figure>
+          <%= image_tag "programmatic-2.png" %>
+          <figcaption>
+            With "dimensions and levels" we found footing with a reporting design. Top Creatives is a dimension that
+            shows the top performing ads for the given level of inventory. This helps the publisher understand what kind of content
+            resonates with their audience and helps them strategize new opportunties in direct sales.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 col-offset-2">
+        <h3>More than just performance</h3>
+
+        <figure>
+          <%= image_tag "floor-price-modal.png" %>
+          <figcaption>
+            Floor price control is a core action in SFP. This allows you to be more competitive in the auction and thus optimize
+            your earnings for this piece of inventory. The floor price control is embedded in the reporting. If you see your fill rate
+            dip, you can take an action within that context.
+          </figcaption>
+        </figure>
+        <p>
+          Ok, so I can see how much money I'm making. So what?
+        </p>
+        <p>
+          The real magic in this new design is in combining <strong>performance with management</strong>. If you learn something from reporting, then what? You
+          have to leave that context and go into a completely new interface to commit the change. It shouldn't be like that. That experience
+          requires too much effort from the user. We wanted it to be easier. So we paired "management" tools like <strong>changing the floor price</strong> (this gives the
+          publisher more control on the volume of demand that can compete in the auction) with performance.
+        </p>
+      </div>
+      <div class="col-12">
+        <figure>
+          <%= image_tag "protoyping-flex-floors.png" %>
+          <figcaption>
+            I prototyped a lot of ideas for controlling the floor price of publisher's inventory.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-8 col-offset-2">
+        <p>
+          Floor price sets the minimum that advertisers can bid for that inventory. If you value your inventory, you can set your floor price higher
+          so that premium brands compete for that space. If your strategy is on other forms of monetization, you can set it lower to maximize your fill rate.
+        </p>
+      </div>
+
+  </div>
+</div>

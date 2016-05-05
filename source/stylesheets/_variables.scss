@@ -1,0 +1,28 @@
+/******************************************
+******************************************
+  Variables
+******************************************
+******************************************/
+
+$gray: #1e3d4d;
+$lighter-gray: #396379;
+
+$blue: #02bffd;
+$teal: #26C6DA;
+
+$pink: #E91E63;
+
+$primary-color:$blue;
+$accent-color:$pink;
+
+$sharethrough-green:#4AD0A5;
+
+$kareo-orange:#f7941d;
+
+$mainFont: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,"Helvetica Neue",Helvetica,sans-serif;
+
+@font-face {
+  font-family: 'matilda';
+  src:  url('Matilda.otf') format('otf'),
+        url('myfont.ttf') format('truetype');
+}
